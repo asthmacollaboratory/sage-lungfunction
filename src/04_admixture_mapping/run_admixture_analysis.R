@@ -2,8 +2,7 @@
 # environment variables
 # ==============================================================================
 
-library.path = "/media/BurchardRaid01/LabShare/Data/share_data_projectInProgress/ROH_project/R_libraries"
-# library.path = "/media/BurchardRaid01/LabShare/Home/kkeys/software/R/x86_64-redhat-linux-gnu-library/3.4"
+library.path = "/path/to/klk/R/library/on/burchard/server"
 
 # set group R library path
 .libPaths(c(library.path, .libPaths()))
@@ -165,8 +164,7 @@ setwd(work.dir)
 
 # register a cluster to use for parallel execution
 cl = makeCluster(ncores, outfile="")
-library.path = "/media/BurchardRaid01/LabShare/Data/share_data_projectInProgress/ROH_project/R_libraries"
-clusterEvalQ(cl, .libPaths("/media/BurchardRaid01/LabShare/Data/share_data_projectInProgress/ROH_project/R_libraries"))
+clusterEvalQ(cl, .libPaths(library.path))
 registerDoParallel(cl)
 
 # update variables

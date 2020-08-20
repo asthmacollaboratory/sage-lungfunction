@@ -4,7 +4,7 @@ set -e
 set -u
 
 # directories
-workdir="/media/BurchardRaid01/LabShare/Home/kkeys/gala_sage/page_sage"
+workdir="/path/to/klk/workdir"
 page_workdir="${workdir}/wrkdir_lungfxn_gwas_sage"
 bindir="$HOME/bin"
 codedir="${workdir}/code"
@@ -12,9 +12,8 @@ datadir="${workdir}/data"
 localanc_dir="${datadir}"
 resultsdir="${workdir}/results"
 plotdir="${workdir}/figures"
-#Rlib_path="${HOME}/software/R/x86_64-redhat-linux-gnu-library/3.4"
-genodir="/media/BurchardRaid01/LabShare/Home/kkeys/gala_sage/page_sage/wrkdir_lungfxn_gwas_sage/data_processed/genotypes"
-ROHdir="$HOME/ROH_project/gala2-ROH"
+genodir="${page_workdir}/data_processed/genotypes"
+ROHdir="$HOME/ROH_project/gala2-ROH" ## https://github.com/asthmacollaboratory/gala2-ROH
 
 # binaries
 RSCRIPT="/usr/bin/Rscript"
