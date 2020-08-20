@@ -7,7 +7,7 @@
 # environment variables
 # ==============================================================================
 #cran.mirror     = "https://cran.cnr.berkeley.edu/"  # use UC Berkeley CRAN mirror
-library.path    = "/media/BurchardRaid01/LabShare/Data/share_data_projectInProgress/ROH_project/R_libraries"
+library.path = "/path/to/lab/group/libraries" 
 
 # set group R library path
 .libPaths(c(library.path, .libPaths()))
